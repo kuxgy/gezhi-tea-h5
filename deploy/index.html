@@ -148,6 +148,50 @@ a{color:inherit;text-decoration:none}
   margin:18px auto 0;
 }
 
+/* ===== 饮用提示 ===== */
+.drink-tip{
+  background:#fff;
+  border-radius:12px;
+  padding:28px 32px;
+  border:1px solid var(--border);
+  box-shadow:0 2px 12px rgba(46,93,58,0.06);
+}
+.drink-tip-title{
+  font-family:'Noto Serif SC',serif;
+  font-size:17px;
+  font-weight:700;
+  color:var(--green-deep);
+  margin-bottom:14px;
+  letter-spacing:0.1em;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.drink-tip-title::before{
+  content:'';
+  display:inline-block;
+  width:4px;
+  height:18px;
+  background:var(--gold);
+  border-radius:2px;
+}
+.drink-tip p{
+  font-size:14px;
+  color:var(--text-mid);
+  line-height:1.9;
+  margin-bottom:10px;
+}
+.drink-tip p:last-child{
+  margin-bottom:0;
+}
+.drink-tip-note{
+  color:var(--green-mid) !important;
+  font-size:13px !important;
+  padding-top:12px;
+  border-top:1px dashed var(--border);
+  margin-top:8px !important;
+}
+
 /* ===== 草本成分 ===== */
 .ingredients-grid{
   display:grid;
@@ -478,8 +522,20 @@ a{color:inherit;text-decoration:none}
 <section class="intro">
   <div class="container">
     <div class="section-label">产品简介</div>
-    <p>葛枳醉美蛋清茶饮品是<strong>雲茜姐姐</strong>品牌旗下植物饮料，以葛根、枳椇子、蛋清、人参等多种原料为主要成分，经特定工艺加工而成。</p>
-    <p>本品为瓶装饮品，开盖即饮，可常温或冷藏后饮用，适合日常饮用场景。</p>
+    <p>葛枳醉美蛋清茶饮品是<strong>雲茜姐姐</strong>品牌旗下植物饮料，以葛根、鸡蛋清粉、枳椇子、人参等多种原料为主要成分，经特定工艺加工而成。</p>
+    <p>本品由山东康美药业有限公司生产，车间达十万级净化标准。瓶装设计，开盖即饮，可常温或冷藏后饮用，适合日常饮用场景。</p>
+  </div>
+</section>
+
+<!-- ===== 饮用提示 ===== -->
+<section class="section" style="padding:36px 0;background:var(--cream);">
+  <div class="container">
+    <div class="drink-tip">
+      <div class="drink-tip-title">饮用提示</div>
+      <p>本品以葛根、枳椇子、鸡蛋清粉、人参等传统原料精制而成，口感清爽，回甘自然。</p>
+      <p>小瓶装设计，便携易带，适合聚餐、社交及日常休闲等场景饮用。可根据个人喜好选择常温或冷藏后饮用。</p>
+      <p class="drink-tip-note">温馨提示：本品适合聚会餐小酌前饮用更佳</p>
+    </div>
   </div>
 </section>
 
@@ -504,8 +560,8 @@ a{color:inherit;text-decoration:none}
       </div>
       <div class="ingredient">
         <div class="char-circle">蛋</div>
-        <div class="name">蛋清</div>
-        <div class="desc">鸡蛋的蛋清部分</div>
+        <div class="name">鸡蛋清粉</div>
+        <div class="desc">鸡蛋蛋清经干燥处理制成</div>
       </div>
       <div class="ingredient">
         <div class="char-circle">参</div>
@@ -565,10 +621,11 @@ a{color:inherit;text-decoration:none}
     <table class="param-table">
       <tr><th>产品名称</th><td>葛枳醉美蛋清茶饮品</td></tr>
       <tr><th>产品类型</th><td>植物饮料</td></tr>
-      <tr><th>规　　格</th><td>100ml / 瓶（礼盒装 100ml×8瓶）</td></tr>
-      <tr><th>零 售 价</th><td>20元 / 瓶</td></tr>
+      <tr><th>规　　格</th><td>礼盒装：100ml×8瓶/盒；渠道装：100ml×80瓶/件</td></tr>
+      <tr><th>零 售 价</th><td>158元/盒（8瓶装，约20元/瓶）</td></tr>
+      <tr><th>生产基地</th><td>山东康美药业有限公司（十万级净化车间）</td></tr>
       <tr><th>保 质 期</th><td>详见瓶身喷码</td></tr>
-      <tr><th>贮存方法</th><td>密封，置阴凉干燥处保存</td></tr>
+      <tr><th>贮存方法</th><td>置阴凉干燥处保存，避免阳光直射</td></tr>
       <tr><th>饮用方式</th><td>开盖即饮</td></tr>
     </table>
 
@@ -608,8 +665,8 @@ a{color:inherit;text-decoration:none}
           <svg viewBox="0 0 24 24"><path d="M12 2L4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6l-8-4zm-1.2 13.2l-3-3 1.4-1.4 1.6 1.6 3.8-3.8 1.4 1.4-5.2 5.2z"/></svg>
         </div>
         <div class="cert-body">
-          <h4>外观设计专利</h4>
-          <p>专利申请号：2023301843616</p>
+          <h4>包装瓶外观设计专利</h4>
+          <p>专利号：ZL 2023 3 0184312.2<br>授权公告日：2024年1月5日</p>
         </div>
       </div>
       <div class="cert-item">
@@ -617,8 +674,8 @@ a{color:inherit;text-decoration:none}
           <svg viewBox="0 0 24 24"><path d="M12 2L4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6l-8-4zm-1.2 13.2l-3-3 1.4-1.4 1.6 1.6 3.8-3.8 1.4 1.4-5.2 5.2z"/></svg>
         </div>
         <div class="cert-body">
-          <h4>发明专利</h4>
-          <p>专利申请号：2023103856450X</p>
+          <h4>包装盒外观设计专利</h4>
+          <p>专利号：ZL 2023 3 0184361.6<br>授权公告日：2024年1月16日</p>
         </div>
       </div>
       <div class="cert-item">
@@ -658,11 +715,11 @@ a{color:inherit;text-decoration:none}
   <div class="container">
     <div class="brand-name">雲茜姐姐</div>
     <div class="brand-slogan">自然馈赠 · 健康养生</div>
-    <p class="brand-desc">雲茜姐姐品牌创立于2017年，秉承"仁德精进，包容创新"的企业理念，以"一切为了人类健康"为使命，致力于草本健康产品的研发与推广。</p>
+    <p class="brand-desc">雲茜姐姐品牌由雲茜科技有限公司运营，创立于2017年，秉承"仁德精进，包容创新"的企业理念，以"一切为了人类健康"为使命，致力于草本健康产品的研发与推广。生产基地位于山东康美药业有限公司，车间达十万级净化标准。</p>
     <div class="brand-tags">
       <span class="brand-tag">2017年创立</span>
       <span class="brand-tag">草本配方</span>
-      <span class="brand-tag">规范生产</span>
+      <span class="brand-tag">十万级净化车间</span>
     </div>
   </div>
 </section>
