@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>葛枳醉美蛋清茶饮品 - 雲茜姐姐 | 植物饮料</title>
+<link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%232E5D3A'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='serif'>葛</text></svg>">
+<style>
+/* ===== 基础重置 ===== */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;
+  color:#2C2C2C;
+  background:#F7F5EF;
+  line-height:1.8;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* ===== 色彩变量 ===== */
+:root{
+  --green-deep:#2E5D3A;
+  --green-mid:#4A7C59;
+  --green-light:#A8C5A0;
+  --green-pale:#E8EFE4;
+  --cream:#F7F5EF;
+  --cream-deep:#EFEBDF;
+  --gold:#B8935A;
+  --text-dark:#2C2C2C;
+  --text-mid:#555;
+  --text-light:#888;
+  --border:#D8D4C8;
+}
+
+/* ===== 通用容器 ===== */
+.container{max-width:720px;margin:0 auto;padding:0 24px}
+
+/* ===== 品牌顶栏 ===== */
+.brand-bar{
+  text-align:center;
+  padding:36px 0 20px;
+  letter-spacing:0.5em;
+  font-family:'Noto Serif SC',serif;
+  font-size:15px;
+  color:var(--green-deep);
+  font-weight:600;
+}
+
+/* ===== Hero 区 ===== */
+.hero{
+  text-align:center;
+  padding:20px 0 50px;
+}
+.hero-img-wrap{
+  max-width:340px;
+  margin:0 auto 36px;
+  background:linear-gradient(180deg,#fff 0%,var(--green-pale) 100%);
+  border-radius:16px;
+  padding:40px 30px;
+}
+.hero-img-wrap img{
+  width:100%;
+  object-fit:contain;
+  max-height:420px;
+}
+.hero h1{
+  font-family:'Noto Serif SC',serif;
+  font-size:clamp(28px,6vw,40px);
+  font-weight:900;
+  color:var(--green-deep);
+  letter-spacing:0.08em;
+  margin-bottom:10px;
+}
+.hero .pinyin{
+  font-size:13px;
+  letter-spacing:0.25em;
+  color:var(--text-light);
+  margin-bottom:16px;
+  text-transform:uppercase;
+}
+.hero .subtitle{
+  display:inline-block;
+  font-size:14px;
+  letter-spacing:0.3em;
+  color:var(--green-mid);
+  border-top:1px solid var(--green-light);
+  border-bottom:1px solid var(--green-light);
+  padding:8px 24px;
+}
+
+/* ===== 产品简介 ===== */
+.intro{
+  padding:50px 0;
+  background:#fff;
+}
+.intro .section-label{
+  text-align:center;
+  font-family:'Noto Serif SC',serif;
+  font-size:20px;
+  font-weight:700;
+  color:var(--green-deep);
+  margin-bottom:28px;
+  letter-spacing:0.15em;
+}
+.intro p{
+  font-size:15px;
+  color:var(--text-mid);
+  line-height:2;
+  margin-bottom:16px;
+  text-align:justify;
+}
+.intro p strong{
+  color:var(--green-deep);
+  font-weight:600;
+}
+
+/* ===== 区块通用标题 ===== */
+.section{
+  padding:60px 0;
+}
+.section.alt{
+  background:#fff;
+}
+.section-head{
+  text-align:center;
+  margin-bottom:44px;
+}
+.section-head .eyebrow{
+  font-size:13px;
+  letter-spacing:0.4em;
+  color:var(--gold);
+  margin-bottom:14px;
+}
+.section-head h2{
+  font-family:'Noto Serif SC',serif;
+  font-size:clamp(22px,5vw,30px);
+  font-weight:700;
+  color:var(--green-deep);
+  letter-spacing:0.12em;
+}
+.section-head .divider{
+  width:40px;
+  height:2px;
+  background:var(--gold);
+  margin:18px auto 0;
+}
+
+/* ===== 草本成分 ===== */
+.ingredients-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:28px 20px;
+  margin-bottom:36px;
+}
+.ingredient{
+  text-align:center;
+}
+.ingredient .char-circle{
+  width:64px;
+  height:64px;
+  border-radius:50%;
+  background:var(--green-pale);
+  border:1.5px solid var(--green-light);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin:0 auto 14px;
+  font-family:'Noto Serif SC',serif;
+  font-size:28px;
+  font-weight:700;
+  color:var(--green-deep);
+}
+.ingredient .name{
+  font-size:16px;
+  font-weight:600;
+  color:var(--text-dark);
+  margin-bottom:6px;
+}
+.ingredient .desc{
+  font-size:12.5px;
+  color:var(--text-light);
+  line-height:1.6;
+}
+.ingredients-note{
+  text-align:center;
+  font-size:12.5px;
+  color:var(--text-light);
+  letter-spacing:0.1em;
+  padding-top:20px;
+  border-top:1px dashed var(--border);
+}
+
+/* ===== 饮用方法 ===== */
+.steps{
+  display:flex;
+  flex-direction:column;
+  gap:32px;
+  margin-bottom:32px;
+}
+.step{
+  display:flex;
+  gap:24px;
+  align-items:flex-start;
+}
+.step-num{
+  flex-shrink:0;
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  background:var(--green-deep);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:'Noto Serif SC',serif;
+  font-size:20px;
+  font-weight:700;
+}
+.step-body h3{
+  font-size:16px;
+  font-weight:600;
+  color:var(--text-dark);
+  margin-bottom:6px;
+}
+.step-body p{
+  font-size:14px;
+  color:var(--text-mid);
+  line-height:1.8;
+}
+.tip-box{
+  background:var(--green-pale);
+  border-left:3px solid var(--green-mid);
+  padding:16px 20px;
+  border-radius:0 8px 8px 0;
+  font-size:13.5px;
+  color:var(--text-mid);
+  line-height:1.8;
+}
+.tip-box strong{
+  color:var(--green-deep);
+}
+
+/* ===== 产品参数 ===== */
+.param-table{
+  width:100%;
+  border-collapse:collapse;
+  margin-bottom:40px;
+}
+.param-table tr{
+  border-bottom:1px solid var(--border);
+}
+.param-table tr:first-child{
+  border-top:2px solid var(--green-deep);
+}
+.param-table tr:last-child{
+  border-bottom:2px solid var(--green-deep);
+}
+.param-table th{
+  width:35%;
+  text-align:left;
+  padding:14px 16px;
+  font-size:14px;
+  font-weight:500;
+  color:var(--text-mid);
+  background:var(--cream-deep);
+  letter-spacing:0.05em;
+}
+.param-table td{
+  padding:14px 16px;
+  font-size:14px;
+  color:var(--text-dark);
+}
+
+/* ===== 营养成分表 ===== */
+.nutrition-wrap{
+  margin-bottom:10px;
+}
+.nutrition-title{
+  font-size:15px;
+  font-weight:600;
+  color:var(--green-deep);
+  margin-bottom:14px;
+  text-align:center;
+  letter-spacing:0.1em;
+}
+.nutrition-table{
+  width:100%;
+  border-collapse:collapse;
+  border:2px solid var(--text-dark);
+  font-size:13px;
+}
+.nutrition-table th,
+.nutrition-table td{
+  border:1px solid var(--text-dark);
+  padding:8px 10px;
+  text-align:center;
+}
+.nutrition-table thead th{
+  background:var(--cream-deep);
+  font-weight:600;
+}
+.nutrition-table .item-name{
+  text-align:left;
+  font-weight:500;
+}
+
+/* ===== 资质与保障 ===== */
+.cert-list{
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+.cert-item{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+  padding:20px;
+  background:var(--cream);
+  border-radius:10px;
+  border:1px solid var(--border);
+}
+.cert-icon{
+  flex-shrink:0;
+  width:44px;
+  height:44px;
+  border-radius:8px;
+  background:var(--green-deep);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.cert-icon svg{
+  width:22px;
+  height:22px;
+  fill:#fff;
+}
+.cert-body h4{
+  font-size:14px;
+  font-weight:600;
+  color:var(--text-dark);
+  margin-bottom:4px;
+}
+.cert-body p{
+  font-size:13px;
+  color:var(--text-mid);
+  line-height:1.7;
+}
+
+/* ===== 注意事项 ===== */
+.notice-list{
+  list-style:none;
+  counter-reset:notice;
+}
+.notice-list li{
+  counter-increment:notice;
+  padding:14px 0 14px 44px;
+  position:relative;
+  font-size:14px;
+  color:var(--text-mid);
+  line-height:1.8;
+  border-bottom:1px solid var(--border);
+}
+.notice-list li:last-child{
+  border-bottom:none;
+}
+.notice-list li::before{
+  content:counter(notice);
+  position:absolute;
+  left:0;
+  top:16px;
+  width:28px;
+  height:28px;
+  border-radius:50%;
+  background:var(--cream-deep);
+  color:var(--green-deep);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:13px;
+  font-weight:600;
+}
+
+/* ===== 品牌介绍 ===== */
+.brand-section{
+  background:var(--green-deep);
+  color:#fff;
+  padding:60px 0;
+  text-align:center;
+}
+.brand-section .brand-name{
+  font-family:'Noto Serif SC',serif;
+  font-size:clamp(24px,5vw,32px);
+  font-weight:700;
+  letter-spacing:0.2em;
+  margin-bottom:12px;
+}
+.brand-section .brand-slogan{
+  font-size:14px;
+  letter-spacing:0.35em;
+  color:var(--green-light);
+  margin-bottom:32px;
+}
+.brand-section .brand-desc{
+  font-size:14px;
+  line-height:2;
+  color:rgba(255,255,255,0.8);
+  max-width:520px;
+  margin:0 auto 28px;
+  text-align:justify;
+}
+.brand-tags{
+  display:flex;
+  justify-content:center;
+  gap:16px;
+  flex-wrap:wrap;
+}
+.brand-tag{
+  font-size:12.5px;
+  letter-spacing:0.15em;
+  padding:6px 18px;
+  border:1px solid rgba(255,255,255,0.3);
+  border-radius:20px;
+  color:rgba(255,255,255,0.75);
+}
+
+/* ===== 页脚 ===== */
+.footer{
+  background:#234A2E;
+  padding:28px 0;
+  text-align:center;
+}
+.footer p{
+  font-size:12px;
+  color:rgba(255,255,255,0.45);
+  letter-spacing:0.1em;
+  line-height:1.8;
+}
+.footer .disclaimer{
+  margin-top:8px;
+  font-size:11px;
+  color:rgba(255,255,255,0.3);
+}
+
+/* ===== 响应式 ===== */
+@media(max-width:480px){
+  .container{padding:0 18px}
+  .ingredients-grid{gap:24px 14px}
+  .ingredient .char-circle{width:56px;height:56px;font-size:24px}
+  .param-table th{width:40%;padding:12px 10px;font-size:13px}
+  .param-table td{padding:12px 10px;font-size:13px}
+  .step{gap:16px}
+  .step-num{width:40px;height:40px;font-size:17px}
+  .cert-item{padding:16px}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== 品牌顶栏 ===== -->
+<header class="brand-bar">雲 茜 姐 姐</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-img-wrap">
+      <img src="assets/product-bottle.jpg" alt="葛枳醉美蛋清茶饮品">
+    </div>
+    <h1>葛枳醉美蛋清茶饮品</h1>
+    <div class="pinyin">GEZHIZUIMEIDANQINGCHAYINPIN</div>
+    <div class="subtitle">植物饮料 · 草本配方</div>
+  </div>
+</section>
+
+<!-- ===== 产品简介 ===== -->
+<section class="intro">
+  <div class="container">
+    <div class="section-label">产品简介</div>
+    <p>葛枳醉美蛋清茶饮品是<strong>雲茜姐姐</strong>品牌旗下植物饮料，以葛根、枳椇子、蛋清、人参等多种原料为主要成分，经特定工艺加工而成。</p>
+    <p>本品为瓶装饮品，开盖即饮，可常温或冷藏后饮用，适合日常饮用场景。</p>
+  </div>
+</section>
+
+<!-- ===== 草本成分 ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">原 料 可 溯</div>
+      <h2>草本成分</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="ingredients-grid">
+      <div class="ingredient">
+        <div class="char-circle">葛</div>
+        <div class="name">葛根</div>
+        <div class="desc">豆科植物野葛的干燥根</div>
+      </div>
+      <div class="ingredient">
+        <div class="char-circle">枳</div>
+        <div class="name">枳椇子</div>
+        <div class="desc">鼠李科植物枳椇的成熟种子</div>
+      </div>
+      <div class="ingredient">
+        <div class="char-circle">蛋</div>
+        <div class="name">蛋清</div>
+        <div class="desc">鸡蛋的蛋清部分</div>
+      </div>
+      <div class="ingredient">
+        <div class="char-circle">参</div>
+        <div class="name">人参</div>
+        <div class="desc">五加科植物人参的干燥根</div>
+      </div>
+    </div>
+    <div class="ingredients-note">— 以上为主要原料，经特定工艺加工而成 —</div>
+  </div>
+</section>
+
+<!-- ===== 饮用方法 ===== -->
+<section class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">开 盖 即 饮</div>
+      <h2>饮用方法</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <h3>检查包装</h3>
+          <p>饮用前请检查瓶盖是否完好，确认无破损、无漏液后再开启。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <h3>开盖饮用</h3>
+          <p>旋开瓶盖即可直接饮用，可根据个人喜好选择常温或冷藏后饮用。</p>
+        </div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <h3>适量饮用</h3>
+          <p>建议每次饮用1瓶，日常饮用。本品允许有少量沉淀，饮用前可摇匀。</p>
+        </div>
+      </div>
+    </div>
+    <div class="tip-box">
+      <strong>温馨提示：</strong>本品为植物饮料，不能代替药品。开启后请尽快饮用完毕。
+    </div>
+  </div>
+</section>
+
+<!-- ===== 产品参数 ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">规 格 明 细</div>
+      <h2>产品参数</h2>
+      <div class="divider"></div>
+    </div>
+    <table class="param-table">
+      <tr><th>产品名称</th><td>葛枳醉美蛋清茶饮品</td></tr>
+      <tr><th>产品类型</th><td>植物饮料</td></tr>
+      <tr><th>规　　格</th><td>100ml / 瓶（礼盒装 100ml×8瓶）</td></tr>
+      <tr><th>零 售 价</th><td>20元 / 瓶</td></tr>
+      <tr><th>保 质 期</th><td>详见瓶身喷码</td></tr>
+      <tr><th>贮存方法</th><td>密封，置阴凉干燥处保存</td></tr>
+      <tr><th>饮用方式</th><td>开盖即饮</td></tr>
+    </table>
+
+    <div class="nutrition-wrap">
+      <div class="nutrition-title">营养成分表</div>
+      <table class="nutrition-table">
+        <thead>
+          <tr>
+            <th style="width:34%">项目</th>
+            <th style="width:33%">每100克</th>
+            <th style="width:33%">营养素参考值%</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="item-name">能量</td><td>110千焦</td><td>1%</td></tr>
+          <tr><td class="item-name">蛋白质</td><td>0克</td><td>0%</td></tr>
+          <tr><td class="item-name">脂肪</td><td>0克</td><td>0%</td></tr>
+          <tr><td class="item-name">碳水化合物</td><td>6.5克</td><td>2%</td></tr>
+          <tr><td class="item-name">钠</td><td>9毫克</td><td>0%</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 资质与保障 ===== -->
+<section class="section alt">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">规 范 生 产</div>
+      <h2>资质与保障</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="cert-list">
+      <div class="cert-item">
+        <div class="cert-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6l-8-4zm-1.2 13.2l-3-3 1.4-1.4 1.6 1.6 3.8-3.8 1.4 1.4-5.2 5.2z"/></svg>
+        </div>
+        <div class="cert-body">
+          <h4>外观设计专利</h4>
+          <p>专利申请号：2023301843616</p>
+        </div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2L4 6v6c0 5 3.5 9.5 8 10 4.5-.5 8-5 8-10V6l-8-4zm-1.2 13.2l-3-3 1.4-1.4 1.6 1.6 3.8-3.8 1.4 1.4-5.2 5.2z"/></svg>
+        </div>
+        <div class="cert-body">
+          <h4>发明专利</h4>
+          <p>专利申请号：2023103856450X</p>
+        </div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+        </div>
+        <div class="cert-body">
+          <h4>产品责任保险</h4>
+          <p>中国太平洋财产保险股份有限公司承保产品责任险</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 注意事项 ===== -->
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">安 全 提 示</div>
+      <h2>注意事项</h2>
+      <div class="divider"></div>
+    </div>
+    <ol class="notice-list">
+      <li>本品为植物饮料，不能代替药品和医疗器械的治疗。</li>
+      <li>对本品及所含成分过敏者禁用，过敏体质者慎用。</li>
+      <li>孕妇、哺乳期妇女及婴幼儿不宜饮用。</li>
+      <li>瓶盖凸起、破损或漏液时请勿饮用。</li>
+      <li>本品允许有少量沉淀，属正常现象，饮用前请摇匀。</li>
+      <li>开启后请尽快饮用完毕，未饮完请冷藏并于24小时内喝完。</li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== 品牌介绍 ===== -->
+<section class="brand-section">
+  <div class="container">
+    <div class="brand-name">雲茜姐姐</div>
+    <div class="brand-slogan">自然馈赠 · 健康养生</div>
+    <p class="brand-desc">雲茜姐姐品牌创立于2017年，秉承"仁德精进，包容创新"的企业理念，以"一切为了人类健康"为使命，致力于草本健康产品的研发与推广。</p>
+    <div class="brand-tags">
+      <span class="brand-tag">2017年创立</span>
+      <span class="brand-tag">草本配方</span>
+      <span class="brand-tag">规范生产</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer class="footer">
+  <div class="container">
+    <p>品牌：雲茜姐姐</p>
+    <p class="disclaimer">本页面仅作产品信息展示，本品为植物饮料，不能代替药品。</p>
+  </div>
+</footer>
+
+</body>
+</html>
